@@ -8,8 +8,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
-require('dotenv').config();
-// const Key = process.env.key;
+
+
 
 const authorization = (req , res , next)=>{
     try {
