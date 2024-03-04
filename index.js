@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
-
 const authorization = (req , res , next)=>{
     try {
     const token = req.headers.authorization.split(" ")[1];
